@@ -20,11 +20,11 @@ Employee.prototype.jobGreet = function () {
   return `Hello, my name is ${this.name}, I am ${this.age} years old, and my job title is ${this.jobTitle}.`
 }
 
-et Alice = new Person("Alice", 25);
-console.log(Alice.greet()); // This should log: Hello, my name is Alice, I am 25 years old.
+let Alice = new Person("Alice", 25);
+console.log(Alice.greet());
 
 let Bob = new Employee("Bob", 30, "Manager");
-console.log(Bob.jobGreet()); // This should log: Hello, my name is Bob, I am 30 years old, and my job title is Manager.
+console.log(Bob.jobGreet()); 
 
 // Do not change code below this line
 window.Person = Person;
